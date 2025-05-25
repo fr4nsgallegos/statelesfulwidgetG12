@@ -3,6 +3,15 @@ import 'package:flutter/material.dart';
 class LagoScreen extends StatelessWidget {
   const LagoScreen({super.key});
 
+  Widget botonIcono(String texto, IconData icono) {
+    return Column(
+      children: [
+        Icon(icono, color: Colors.blue),
+        Text(texto, style: TextStyle(color: Colors.blue)),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +37,15 @@ class LagoScreen extends StatelessWidget {
                         Text("41"),
                       ],
                     ),
+                  ],
+                ),
+                SizedBox(height: 32),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    botonIcono("CALL", Icons.phone),
+                    botonIcono("ROUTE", Icons.route),
+                    botonIcono("SHARE", Icons.share),
                   ],
                 ),
               ],
