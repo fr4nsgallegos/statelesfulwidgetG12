@@ -30,6 +30,7 @@ class LagoScreen extends StatelessWidget {
               children: [
                 ListTile(
                   title: Text("Lago Titicaca"),
+                  // leading: Icon(Icons.abc_outlined),
                   subtitle: Text("Peru - Puno"),
                   trailing: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -37,6 +38,13 @@ class LagoScreen extends StatelessWidget {
                       Icon(Icons.star, color: Colors.orange),
                       Text("41"),
                     ],
+                  ),
+                ),
+                Divider(color: Colors.red, thickness: 1),
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Text("Contenido de la tarjeta"),
                   ),
                 ),
                 // Row(
